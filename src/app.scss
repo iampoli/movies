@@ -1,0 +1,54 @@
+.App{
+    .movies{
+        padding:0 50px;
+        .movies__list{
+
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        h1{
+            font-size: 24px;
+            text-transform: capitalize;
+            padding: 30px 40px 10px ;
+            color: white;
+            letter-spacing: 1px;
+            text-align: right;
+        }
+        .dots{
+            &.hide{
+                display: none;
+            }
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .slide-btn{
+                color: rgb(211, 211, 211);
+                border: 1px solid transparent;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                font-size: 26px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all .5s ;
+                cursor: pointer;
+                
+                // &.next{
+                // }
+                &:hover {
+                    border-color: white;
+                    color: white;
+                }
+            }
+            .page{
+                color: white;
+                margin:0 15px;
+            }
+        }
+
+    }
+}
